@@ -4,6 +4,7 @@ import Loading from '../components/loading/loading';
 import NetworkInfo from '../components/network/network_info';
 import SearchBar from '../components/search_bar';
 import Ionicon from 'react-native-vector-icons/Ionicons';
+import { ZOMATO_API_KEY } from '../config';
 
 const _width = Dimensions.get('window').width
 const _height = Dimensions.get('window').height
@@ -29,7 +30,7 @@ export default class MainScreen extends Component {
             fetch(url, {
                 'method': 'GET',
                 'headers': {
-                    'user-key': '737c2adace7f6ce735ebfaf502f1b658'
+                    'user-key': ZOMATO_API_KEY
                 }
             })
                 .then(response => response.json())

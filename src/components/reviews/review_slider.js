@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { ZOMATO_API_KEY } from '../../config';
 import ReviewItem from './review_item';
 
 export default class ReviewSlider extends Component {
@@ -20,7 +21,7 @@ export default class ReviewSlider extends Component {
         fetch(url, {
             'method': 'GET',
             'headers': {
-                'user-key': '737c2adace7f6ce735ebfaf502f1b658'
+                'user-key': ZOMATO_API_KEY
             }
         })
         .then(response => response.json())

@@ -4,6 +4,7 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import Loading from '../components/loading/loading';
 import NetworkInfo from '../components/network/network_info';
 import RestaurantItem from '../components/restaurant_item';
+import { ZOMATO_API_KEY } from '../config';
 
 export default class RestaurantScreen extends Component {
 
@@ -25,7 +26,7 @@ export default class RestaurantScreen extends Component {
         fetch(url, {
             'method': 'GET',
             'headers': {
-                'user-key': '737c2adace7f6ce735ebfaf502f1b658'
+                'user-key': ZOMATO_API_KEY
             }
         })
             .then(response => response.json())
@@ -49,7 +50,7 @@ export default class RestaurantScreen extends Component {
         fetch(url, {
             'method': 'GET',
             'headers': {
-                'user-key': '737c2adace7f6ce735ebfaf502f1b658'
+                'user-key': ZOMATO_API_KEY
             }
         })
             .then(response => response.json())

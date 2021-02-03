@@ -1,0 +1,1 @@
+export const ZOMATO_API_KEY = 'XXX_ZOMATO_API_XXX'

@@ -5,6 +5,7 @@ import RestaurantHighlights from '../components/highlights/restaurant_highlights
 import Loading from '../components/loading/loading';
 import RestaurantRating from '../components/restaurant_rating';
 import ReviewSlider from '../components/reviews/review_slider';
+import { ZOMATO_API_KEY } from '../config';
 
 const MIN_HEIGHT = Platform.OS === "ios" ? 90 : 55
 const MAX_HEIGHT = 350
@@ -33,7 +34,7 @@ export default class RestaurantDetail extends Component {
         fetch(url, {
             'method': 'GET',
             'headers': {
-                'user-key': '737c2adace7f6ce735ebfaf502f1b658'
+                'user-key': ZOMATO_API_KEY
             }
         })
             .then(response => response.json())
