@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "RestaurantApp",
-    "slug": "RestaurantApp",
+    "slug": "restaurant-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app_icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -17,7 +17,13 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.denistomasovic.restaurantapp",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.denistomasovic.restaurantapp",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
